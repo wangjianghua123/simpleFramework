@@ -1,0 +1,31 @@
+<?php
+	 session_save_path('d:\php\tmp2');
+session_start();
+
+include_once( 'config.php' );
+include_once( 'saetv2.ex.class.php' );
+
+$o = new SaeTOAuthV2( WB_AKEY , WB_SKEY );
+
+if (isset($_REQUEST['code'])) {
+	$keys = array();
+	$keys['code'] = $_REQUEST['code'];
+	$keys['redirect_uri'] = WB_CALLBACK_URL;
+ 
+        $token = $o->getAccessToken( 'code', $keys ) ;
+        $_SESSION['wbopenid']=$token['uid'];
+        $userinfo=$o->get('users/show', array('uid'=>$token['uid']) );
+           
+        $_SESSION['wbkey']=$token['access_token'];
+        $_SESSION['wbname']=$userinfo['screen_name'];
+        if($userinfo['gender']=='m')
+        	$_SESSION['qqsex']=1;
+        else
+        	$_SESSION['qqsex']=0;
+     
+}
+
+if ($token) {
+	setcookie( 'weibojs_'.$o->client_id, http_build_query($token) );}
+	header("Location:///account/login/third?rqr=2");
+?>

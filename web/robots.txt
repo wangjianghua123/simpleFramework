@@ -1,0 +1,5 @@
+#
+# robots.txt for www.gittest.com
+#
+User-agent: * 
+Disallow: /admin

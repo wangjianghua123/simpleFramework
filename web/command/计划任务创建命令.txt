@@ -1,0 +1,4 @@
+schtasks /create /tn collectforcompany /tr D:\web2\www.kjiuye.com\web\command\runcfc.bat /sc minute /mo 10  同步公司信息
+schtasks /create /tn collectforcompany /tr D:\web2\www.kjiuye.com\web\command\runcfj.bat /sc minute /mo 10  同步职位信息
+schtasks /create /tn collectforcompany /tr D:\web2\www.kjiuye.com\web\command\runchkfc.bat /sc minute /mo 10 检查公司信息格式等等
+schtasks /create /tn collectforcompany /tr D:\web2\www.kjiuye.com\web\command\runchkfj.bat /sc minute /mo 10 检查职位信息格式等等

@@ -1,0 +1,1 @@
+<?phpheader('Content-Type: text/html; charset=UTF-8');define( "WB_AKEY" , '291133081' );define( "WB_SKEY" , '8bb621d305d13bd8894abf37569e5c7d' );define( "WB_CALLBACK_URL" , 'http://pin.ujiuye.com/connect2/w/callback.php' );

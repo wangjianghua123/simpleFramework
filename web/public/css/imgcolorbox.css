@@ -1,0 +1,30 @@
+/* 在线添加简历 裁剪框 */
+#cboxOverlay{background: url(../images/overlay.png) repeat 0 0;position: fixed;width: 100%;height: 100%;top: 0;left: 0;z-index: 9999;overflow: hidden;}
+#colorbox{visibility: visible; top: 100px; left: 630px; position: fixed; width: 446px; height: 600px;outline: 0;z-index: 9999;overflow: hidden;}
+#cboxWrapper {position: absolute;height: 600px; width: 446px;top: 0;left: 0;z-index: 9999;overflow: hidden;}
+#cboxTopLeft {float: left;width: 13px;height: 13px;background: #3a3a3a;opacity: .5;filter: alpha(opacity=50);}
+#cboxTopCenter {float: left; width: 420px;height: 13px;background: #3a3a3a;opacity: .5;filter: alpha(opacity=50);}
+#cboxTopRight {width: 13px;height: 13px;background: #3a3a3a;opacity: .5;filter: alpha(opacity=50);}
+#cboxMiddleLeft {float: left; height: 574px;width: 13px;background: #3a3a3a;opacity: .5;filter: alpha(opacity=50);}
+#cboxContent {overflow: hidden;background: #fff;position: relative;float: left; width: 420px; height: 574px;}
+#cboxLoadedContent {width: 420px; overflow: auto; height: 530px;margin-top: 44px;}
+.popup {font: 14px/22px Arial,"Hiragino Sans GB","微软雅黑","宋体";color: #555;padding: 30px;width: 442px;overflow: hidden;width:360px;height:470px;background:#fff;}
+#cropzoom_container {overflow: hidden; width: 360px; height: 360px; position: relative;margin: 0 auto;box-shadow: 0 0 10px silver;cursor: move;}
+#selector{width: 250px; height: 250px; top: 55px; left: 55px; border: 1px solid #3297da; position: absolute; cursor: move; -webkit-user-select: none; z-index: 1;}
+#infoSelector{position: absolute; top: 0px; left: 0px; font-size: 10px; font-family: Arial; color: blue; width: 100%;}
+.ui-state-default{margin-top: -2px;font-weight: bold;background: url(../images/mr_headimage.png) #3297da -50px -3px;color: #3297da;outline: none;margin-left: -.6em;position: absolute;z-index: 2;height: 1.4em;-webkit-border-radius: 3px;top: -.3em;width: 1.2em;background-position: -52px -1px;cursor: pointer;}
+.ui-widget {font-size: 1.1em;}
+.page_btn {float: right;margin-top: 20px;}
+.btn {font-size: 20px;background: #3297da;padding: 0 25px;text-decoration: none;display: inline-block;text-align: center;height: 37px;color: #fff;border: 0;line-height: 37px;transition: background 0.2s ease-in 0s;float:right;}
+.cancel {line-height: 35px;margin-right: 25px;background: transparent;font-size: 20px;color: #333;font-family: Arial,"Hiragino Sans GB","微软雅黑","宋体";outline: none;cursor: pointer;border: none;}
+#cboxTitle {float: left; display: block;font-size: 18px;color: #fff;background: #3297da;height: 44px;width: 100%;text-indent: 1em;position: absolute;top: 0;left: 0;line-height: 44px;margin: 0;}
+#cboxCurrent {float: left; display: none;position: absolute;bottom: 4px;left: 58px;color: #949494;}
+#cboxPrevious {position: absolute;bottom: 0;left: 0;background: url(../images/controls.png) no-repeat;width: 19px;height: 19px;text-indent: -9999px;}
+#cboxNext {position: absolute;bottom: 0;left: 27px;background: url(../images/controls.png) no-repeat;width: 19px;height: 19px;text-indent: -9999px;}
+#cboxSlideshow {position: absolute;bottom: 4px;right: 30px;color: #0092ef;border: 0;padding: 0;margin: 0;overflow: visible;width: auto;background: 0;cursor: pointer;}
+#cboxClose {position: absolute;top: 12px;right: 12px;background: url(../images/controls.png) no-repeat;width: 19px;height: 19px;text-indent: -9999px;border: 0;padding: 0;margin: 0;overflow: visible;}
+#cboxMiddleRight {width: 13px;background: #3a3a3a;opacity: .5;filter: alpha(opacity=50);float: left; height: 574px;}
+#cboxBottomLeft {width: 13px;height: 13px;background: #3a3a3a;opacity: .5;filter: alpha(opacity=50);clear: left;float: left;}
+#cboxBottomCenter {height: 13px;background: #3a3a3a;opacity: .5;filter: alpha(opacity=50);float: left; width: 420px;}
+#cboxBottomRight {float:left;width: 13px;height: 13px;background: #3a3a3a;opacity: .5;filter: alpha(opacity=50);}
+.ui-slider{background-color:#eee;margin: 7px; float: left; height: 5px; width: 200px; position: relative;}

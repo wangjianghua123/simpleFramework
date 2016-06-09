@@ -1,0 +1,30 @@
+/*0820BYhsk悬浮窗*/
+.indexFix{width:172px; position:fixed;z-index:99999;top:100px;right:0;}
+.fixBtnOpen{display:none; position:absolute; top:50%; left:-26px; margin-top:-60px; width:36px; height:120px; background:url(./images/fixBtnClose.png) center center no-repeat;_background:url(./images/fixBtnClose.gif) center center no-repeat;cursor:pointer;}
+.fixBtnClose{ position:absolute; top:50%; left:-26px; margin-top:-60px; width:36px; height:120px; cursor:pointer; background:url(./images/fixBtnOpen.png) center center no-repeat;_background:url(./images/fixBtnOpen.gif) center center no-repeat;}
+.indexConFix{ float:right; top:0; left:20px;background:#111; width:152px;padding:0 5px 5px 5px;}
+.indexFixH2t{ height:54px;text-align:center; font:bold 22px/54px "Microsoft Yahei"; color:#ccc;}
+.indexFixUl{ overflow:hidden;}
+.indexFixUl li{ height:50px; line-height:50px; overflow:hidden; margin-bottom:3px;}
+.indexFixUl li a{ display:block; height:50px; padding-left:64px; font:normal 16px/50px "Microsoft Yahei"; color:#fff;}
+.indexFixUl li a:hover{ color:#fff; text-decoration:none;}
+li.indexFixLi1 a{ background:url(./images/indexFix_ico1.png) 25px center no-repeat #ff6627;_background:url(./images/indexFix_ico1.gif) 25px center no-repeat #ff6627;}
+li.indexFixLi2 a{ background:url(./images/indexFix_ico2.png) 25px center no-repeat #3189b7;_background:url(./images/indexFix_ico2.gif) 25px center no-repeat #3189b7;}
+li.indexFixLi3 a{ background:url(./images/indexFix_ico3.png) 25px center no-repeat #b02da2;_background:url(./images/indexFix_ico3.gif) 25px center no-repeat #b02da2;}
+li.indexFixLi4 a{ background:url(./images/indexFix_ico4.png) 25px center no-repeat #e23d3d;_background:url(./images/indexFix_ico4.gif) 25px center no-repeat #e23d3d;}
+li.indexFixLi1 a:hover{ background:url(./images/indexFix_ico1.png) 25px center no-repeat #e55c23;_background:url(./images/indexFix_ico1.gif) 25px center no-repeat #e55c23;}
+li.indexFixLi2 a:hover{ background:url(./images/indexFix_ico2.png) 25px center no-repeat #276e92;_background:url(./images/indexFix_ico2.gif) 25px center no-repeat #276e92;}
+li.indexFixLi3 a:hover{ background:url(./images/indexFix_ico3.png) 25px center no-repeat #9e2891;_background:url(./images/indexFix_ico3.gif) 25px center no-repeat #9e2891;}
+li.indexFixLi4 a:hover{ background:url(./images/indexFix_ico4.png) 25px center no-repeat #cb3737;_background:url(./images/indexFix_ico4.gif) 25px center no-repeat #cb3737;}
+.indexFixDl{ width:142px; margin:0 auto; overflow:hidden; padding-top:12px; text-align:center; border-bottom:1px dashed #595959;}
+.indexFixDl dt{ height:110px;}
+.indexFixDl dd{ height:35px; font:normal 16px/35px "Microsoft yahei"; color:#ccc;}
+.indexFix400{ height:30px;font:normal 18px/30px "Microsoft yahei"; color:#ccc; text-align:center;}
+.indexFixWb{ height:24px; line-height:24px;  text-align:center; padding-bottom:5px;}
+.indexFixWb a{ font-size:16px; color:#ccc; font-family:"Microsoft Yahei";}
+.indexFixWb a:hover{ color:#ff4a00;}
+
+/* IE6浏览器的特有方法 */
+/* 修正IE6振动bug */
+* html,* html body{background-image:url(about:blank);background-attachment:fixed}
+* html .indexFix{position:absolute;top:expression(eval(document.documentElement.scrollTop+100));}

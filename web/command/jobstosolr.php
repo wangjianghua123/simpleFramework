@@ -67,67 +67,67 @@ while (true) {
             $v['c_property'] = array('set'=>(int)$comlist['c_property']);
             $v['c_size'] = array('set'=>(int)$comlist['c_size']);
             unset($v['company_id']);
-//            $v['c_industry'] = (int)$comlist['c_industry'];
-//            $v['c_property'] = (int)$comlist['c_property'];
-//            $v['c_size'] = (int)$comlist['c_size'];
-//            if(empty($v['salary_id'])){
-//                $v['salary_id'] = '0';
-//            }
-//            if(empty($v['job_nature']) || $v['job_nature'] == 0){
-//                $v['job_nature'] = 0;
-//            }
-//            if(empty($v['experience']) || $v['experience'] == 0){
-//                $v['experience'] = 0;
-//            }
-//            if(empty($v['education']) || $v['education'] == 0){
-//                $v['education'] = 0;
-//            }
-//            if(empty($v['status']) || $v['status'] == 0){
-//                $v['status'] = 0;
-//            }
+            $v['c_industry'] = (int)$comlist['c_industry'];
+            $v['c_property'] = (int)$comlist['c_property'];
+            $v['c_size'] = (int)$comlist['c_size'];
+            if(empty($v['salary_id'])){
+                $v['salary_id'] = '0';
+            }
+            if(empty($v['job_nature']) || $v['job_nature'] == 0){
+                $v['job_nature'] = 0;
+            }
+            if(empty($v['experience']) || $v['experience'] == 0){
+                $v['experience'] = 0;
+            }
+            if(empty($v['education']) || $v['education'] == 0){
+                $v['education'] = 0;
+            }
+            if(empty($v['status']) || $v['status'] == 0){
+                $v['status'] = 0;
+            }
         }
-//        foreach($list as $k=>&$v){
-//            if(empty($v['salary_id'])){
-//                $v['salary_id'] = '0';
-//            }
-//            if(empty($v['job_nature']) || $v['job_nature'] == 0){
-//                $v['job_nature'] = 0;
-//            }
-//            if(empty($v['experience']) || $v['experience'] == 0){
-//                $v['experience'] = 0;
-//            }
-//            if(empty($v['education']) || $v['education'] == 0){
-//                $v['education'] = 0;
-//            }
-//            if(empty($v['status']) || $v['status'] == 0){
-//                $v['status'] = 0;
-//            }
-//                $v['job_id'] = $v['job_id'];
-//            $v['c_industry'] = (int)$comlist2[$v['company_id']]['c_industry'];
-//            $v['c_property'] = (int)$comlist2[$v['company_id']]['c_property'];
-//            $v['c_size'] = (int)$comlist2[$v['company_id']]['c_size'];
-//                $v['c_industry'] = array('set'=>(int)$comlist2[$v['company_id']]['c_industry']);
-//                $v['c_property'] = array('set'=>(int)$comlist2[$v['company_id']]['c_property']);
-//                $v['c_size'] = array('set'=>(int)$comlist2[$v['company_id']]['c_size']);
-//        }
+        foreach($list as $k=>&$v){
+            if(empty($v['salary_id'])){
+                $v['salary_id'] = '0';
+            }
+            if(empty($v['job_nature']) || $v['job_nature'] == 0){
+                $v['job_nature'] = 0;
+            }
+            if(empty($v['experience']) || $v['experience'] == 0){
+                $v['experience'] = 0;
+            }
+            if(empty($v['education']) || $v['education'] == 0){
+                $v['education'] = 0;
+            }
+            if(empty($v['status']) || $v['status'] == 0){
+                $v['status'] = 0;
+            }
+                $v['job_id'] = $v['job_id'];
+            $v['c_industry'] = (int)$comlist2[$v['company_id']]['c_industry'];
+            $v['c_property'] = (int)$comlist2[$v['company_id']]['c_property'];
+            $v['c_size'] = (int)$comlist2[$v['company_id']]['c_size'];
+                $v['c_industry'] = array('set'=>(int)$comlist2[$v['company_id']]['c_industry']);
+                $v['c_property'] = array('set'=>(int)$comlist2[$v['company_id']]['c_property']);
+                $v['c_size'] = array('set'=>(int)$comlist2[$v['company_id']]['c_size']);
+        }
         
-//        foreach($list as $k=>&$v){
-//            if(empty($v['salary_id'])){
-//                $v['salary_id'] = '0';
-//            }
-//            if(empty($v['job_nature']) || $v['job_nature'] == 0){
-//                $v['job_nature'] = 0;
-//            }
-//            if(empty($v['experience']) || $v['experience'] == 0){
-//                $v['experience'] = 0;
-//            }
-//            if(empty($v['education']) || $v['education'] == 0){
-//                $v['education'] = 0;
-//            }
-//            if(empty($v['status']) || $v['status'] == 0){
-//                $v['status'] = 0;
-//            }
-//        }
+        foreach($list as $k=>&$v){
+            if(empty($v['salary_id'])){
+                $v['salary_id'] = '0';
+            }
+            if(empty($v['job_nature']) || $v['job_nature'] == 0){
+                $v['job_nature'] = 0;
+            }
+            if(empty($v['experience']) || $v['experience'] == 0){
+                $v['experience'] = 0;
+            }
+            if(empty($v['education']) || $v['education'] == 0){
+                $v['education'] = 0;
+            }
+            if(empty($v['status']) || $v['status'] == 0){
+                $v['status'] = 0;
+            }
+        }
         $response = $solr->update($list);
         if($response['responseHeader']['status'] !== 0){
            echo " Failure!!!";

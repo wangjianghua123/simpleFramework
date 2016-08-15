@@ -12,8 +12,8 @@
  */
 class sendMessages{
     var $target = "http://sms.tdxt.cn/sms.aspx";
-	var $sname   = 'dlzbkyoffcn';			// 用户名
-	var $spwd    = '789789';			// 密码
+	var $sname   = '55555';			// 用户名
+	var $spwd    = '444444';			// 密码
 	var $userid  = 1486;
 	public $msg  = '';
 	public $state = 0;

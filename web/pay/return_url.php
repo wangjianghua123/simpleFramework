@@ -15,9 +15,9 @@
 date_default_timezone_set('Asia/Shanghai');
 error_reporting(E_ERROR);
 ini_set('display_errors', 1);
-ini_set('error_log', '/home/web/kjiuye/web/log/err_' . date('Y-m-d') . '.txt');
+ini_set('error_log', '/home/web/test/web/log/err_' . date('Y-m-d') . '.txt');
 define('ROOT_PATH', realpath(dirname(__FILE__)));
-define('PUBLIC_URL', "http://www.kjiuye.com/");
+define('PUBLIC_URL', "http://www.test.com/");
 define('UC_ROOT', dirname(__FILE__) . '/');
 define('UC_DATADIR', UC_ROOT . '../data/');
 define('RETURN_URL','stationresume/list');
@@ -121,7 +121,7 @@ require_once(ROOT_PATH . "/lib/alipay_notify.class.php");
         }
 
         function log_result_is($word) {
-            $fp = fopen("/home/web/kjiuye/web/log/log_zfb".date('Y-m-d').".txt","a");
+            $fp = fopen("/home/web/test/web/log/log_zfb".date('Y-m-d').".txt","a");
             flock($fp, LOCK_EX);
             fwrite($fp, mb_convert_encoding($word, "gb2312", "utf-8") . "\r\n\t" . mb_convert_encoding("请求地址：", "gb2312", "utf-8"). $_SERVER[REQUEST_URI] . "\r\t" . mb_convert_encoding("执行日期：", "gb2312", "utf-8") . date("Y-m-d H:i:s", time()). "\r\n");
             flock($fp, LOCK_UN);

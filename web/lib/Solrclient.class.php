@@ -1,4 +1,7 @@
 <?php
+/*
+ * solr php client
+ */
 class Solrclient {
     private $updateData = array();
     private $deleteData = array();

@@ -1,7 +1,10 @@
 <?php
+/*
+ * APP API签名验证接口
+ */
 class AppOffcnReturn{
 	
-	var $sign_key = 'offcnwx2015|';
+	var $sign_key = '0FXHJNLE|';
 	
 	function __construct(){
 		
